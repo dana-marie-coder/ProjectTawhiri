@@ -11,3 +11,7 @@ body {
   border-radius: 17px;
   padding: 30px;
 }
+
+h3 {
+  color: rgba(54, 24, 24, 0.866);
+}
