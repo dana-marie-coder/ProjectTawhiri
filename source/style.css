@@ -1,1 +1,13 @@
+body {
+  background-color: #7be84c21;
+  font-family: "Corben", serif;
+}
 
+.app-border {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.148);
+  border-radius: 17px;
+  padding: 30px;
+}
