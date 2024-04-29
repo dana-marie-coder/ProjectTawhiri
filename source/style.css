@@ -1,10 +1,46 @@
 body {
-  background-color: #7be84c21;
+  background-color: #0ebbc42d;
   font-family: "Corben", serif;
 }
 
+header {
+  border-bottom: 1px solid #04d3cf46;
+  padding: 0 0 30px 0;
+}
+main {
+  padding: 30px 0;
+}
+h1 {
+  color: #449293;
+}
+
+footer {
+  border-top: 1px solid #04d3cf46;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.weather-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.weather-details {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 24px;
+  font-weight: 500;
+}
 .app-border {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   max-width: 600px;
   margin: 50px auto;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.148);
@@ -12,6 +48,74 @@ body {
   padding: 30px;
 }
 
-h3 {
-  color: rgba(54, 24, 24, 0.866);
+.project {
+  margin-top: 0;
+  text-align: left;
+  font-size: 12px;
+  text-decoration-thickness: 100px;
+}
+.first {
+  color: #04d3d0;
+  text-shadow: 20px -10px 1px #f834994e;
+}
+.second {
+  color: #f83499;
+  text-shadow: 20px -10px 1px #04d3cf6f;
+}
+
+.weather-details strong {
+  color: #f65282;
+}
+
+.weather-container {
+  display: flex;
+}
+
+.weather-temperature {
+  font-size: 88px;
+  color: #449293;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.weather-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+.weather-unit {
+  margin-top: 30px;
+  font-size: 28px;
+  color: #449293;
+}
+
+.search-form {
+  border: none;
+  display: block;
+  margin-top: 50px;
+}
+
+.search-form-input {
+  background-color: #0ebbc42d;
+  border: none;
+  width: 80%;
+  font-size: 16px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: "Corben", serif;
+}
+
+.search-form-button {
+  background-color: #0ebbc4d2;
+  border: none;
+  font-size: 16px;
+  padding: 10px 18px;
+  font-family: "Corben", serif;
+  border-radius: 4px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.065);
+}
+.footer-first {
+  color: #04d3d0;
+}
+
+.footer-second {
+  color: #f83499;
 }

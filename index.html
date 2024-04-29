@@ -15,28 +15,40 @@
   <body>
     <div class="app-border">
       <header>
-        <h3>Welcome to Project Tawhiri</h3>
-        <form class="search-input">
+        <p class="project">
+          <span class="first">Project</span> <span class="second">Tawhiri</span>
+        </p>
+
+        <form class="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
-            class="search-input-element"
+            class="search-form-input"
           />
-          <input type="submit" value="search" class="search-input-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Brisbane</h1>
-          <p>Sunday, 8.12pm, Thunder Storms</p>
-          <p>Humidity: 70%, Wind Speed: 5km/h</p>
+        <div class="weather-main">
+          <div>
+            <h1 class="weather-city">Brisbane</h1>
+            <p class="weather-details">
+              Sunday, 8.12pm, Thunder Storms <br />
+              Humidity: <strong>70%</strong>, Wind Speed: <strong>5km/h</strong>
+            </p>
+          </div>
+          <div class="weather-container">
+            <div class="weather-icon">⛈️</div>
+            <div class="weather-temperature">22</div>
+            <div class="weather-unit">°C</div>
+          </div>
         </div>
-        <div>⛈️ 22°C</div>
       </main>
 
       <footer>
-        Project Tawhiri was coded by
+        <span class="footer-first">Project</span
+        ><span class="footer-second"> Tawhiri</span> was coded by
         <a
           href="https://www.shecodes.io/graduates/42252-dana-marie-osborne"
           target="_blank"
@@ -44,7 +56,7 @@
         </a>
         is
         <a href="https://github.com/dana-marie-coder" target="_blank"
-          >open-sourced on GitHub</a
+          >open-source on GitHub</a
         >
         and hosted on
         <a href="https://project-tawhiri.netlify.app" target="_blank"
