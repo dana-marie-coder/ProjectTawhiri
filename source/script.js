@@ -15,6 +15,7 @@ function updateCityTemperature(response) {
 
   cityTitle.innerHTML = city;
   currentTime.innerHTML = formatDate(date);
+  console.log(response.data.time);
   currentWindSpeed.innerHTML = windSpeed;
   currentHumidity.innerHTML = humidity;
   currentCondition.innerHTML = description;
@@ -42,7 +43,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} ${hours}:${minutes}  `;
+  return `${day} ${hours}:${minutes} `;
 }
 
 function searchCity(city) {
