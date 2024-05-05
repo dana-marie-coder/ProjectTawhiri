@@ -11,7 +11,7 @@ main {
   padding: 30px 0;
 }
 h1 {
-  color: #449293;
+  color: black;
 }
 
 footer {
@@ -72,19 +72,21 @@ footer {
 }
 
 .weather-temperature {
-  font-size: 88px;
-  color: #449293;
-  font-weight: bold;
+  font-size: 70px;
+  color: black;
+  font-family: serif;
   margin-left: 10px;
+  font-weight: bold;
 }
 .weather-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  font-size: 50px;
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
 .weather-unit {
-  margin-top: 30px;
   font-size: 28px;
-  color: #449293;
+  color: rgba(39, 33, 66, 0.4);
 }
 
 .search-form {
