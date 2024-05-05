@@ -39,6 +39,17 @@ footer {
   line-height: 24px;
   font-weight: 500;
 }
+.humidity {
+  color: #f65282;
+  font-family: "Corben", serif;
+  font-weight: bold;
+}
+.wind-speed {
+  color: #f65282;
+  font-family: "Corben", serif;
+  font-weight: bold;
+}
+
 .app-border {
   background-color: rgb(255, 255, 255);
   max-width: 600px;
@@ -61,10 +72,6 @@ footer {
 .second {
   color: #f83499;
   text-shadow: 20px -10px 1px #04d3cf6f;
-}
-
-.weather-details strong {
-  color: #f65282;
 }
 
 .weather-container {
