@@ -93,12 +93,10 @@ footer {
 .humidity {
   color: #f65282;
   font-family: "Corben", serif;
-  font-weight: bold;
 }
 .wind-speed {
   color: #f65282;
   font-family: "Corben", serif;
-  font-weight: bold;
 }
 
 .weather-container {
@@ -122,7 +120,6 @@ footer {
   color: rgba(39, 33, 66, 0.4);
 }
 .weather-forecast {
-  background-color: #0ebbc40a;
   margin-top: 20px;
   text-align: center;
   display: flex;
@@ -133,12 +130,15 @@ footer {
   color: rgba(39, 33, 66, 0.4);
 }
 
+.weekly-forecast-icon {
+}
+
 .weekly-forecast-temperature-max {
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(246, 82, 130);
 }
 .weekly-forecast-temperature-min {
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(246, 82, 131, 0.613);
 }
 .footer-first {
