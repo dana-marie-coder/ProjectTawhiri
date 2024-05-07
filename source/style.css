@@ -1,5 +1,5 @@
 body {
-  background-color: #0ebbc42d;
+  background-color: hsla(183, 87%, 41%, 0.176);
   font-family: "Corben", serif;
 }
 
@@ -27,7 +27,7 @@ footer {
   background-color: rgb(255, 255, 255);
   max-width: 600px;
   margin: 50px auto;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.148);
+  box-shadow: 0 30px 50px hsla(183, 87%, 41%, 0.256);
   border-radius: 17px;
   padding: 30px;
 }
@@ -120,27 +120,40 @@ footer {
   color: rgba(39, 33, 66, 0.4);
 }
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
   display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .weekly-forecast-date {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .weekly-forecast-icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.weekly-forecast-temperature-max {
-  font-size: 13px;
-  color: rgb(246, 82, 130);
+.weekly-forecast-temperatures {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
-.weekly-forecast-temperature-min {
-  font-size: 12px;
+
+.weekly-forecast-temperature {
+  padding: 0 10px;
+}
+.min {
   color: rgba(246, 82, 131, 0.613);
 }
+
 .footer-first {
   color: #04d3d0;
 }

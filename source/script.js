@@ -59,7 +59,30 @@ function searchFormSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = [`Tue`, `Wed`, `Thur`, `Fri`, `Sat`];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+ <div class="weekly-forecast-day">
+              <div class="weekly-forecast-date">${day}</div>
+              <div class="weekly-forecast-icon">⛈️</div>
+              <div class="weekly-forecast-temperatures">
+              <div class="weekly-forecast-temperature">18°</div>
+              <div class="weekly-forecast-temperature"><span class="min">10°</span></div>
+  </div>
+  </div>
+`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchFormSubmit);
 
 searchCity("Redcliffe");
+
+displayForecast();
