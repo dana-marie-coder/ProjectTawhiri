@@ -4,7 +4,7 @@ function updateCityTemperature(response) {
   let cityTitle = document.querySelector("#weather-city");
   let city = response.data.city;
   let currentCondition = document.querySelector("#description");
-  let description = response.data.condition.description;
+  let description = ` ${response.data.condition.description}`;
   let humidity = `${response.data.temperature.humidity}%`;
   let currentHumidity = document.querySelector("#humidity");
   let currentWindSpeed = document.querySelector("#wind-speed");
@@ -45,7 +45,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} ${hours}:${minutes} `;
+  return `${day}, ${hours}:${minutes}, `;
 }
 
 function searchCity(city) {
@@ -75,8 +75,6 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
