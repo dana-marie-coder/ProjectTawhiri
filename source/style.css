@@ -134,9 +134,9 @@ footer {
 }
 
 .weekly-forecast-icon {
+  width: 70px;
   display: block;
   margin: 0 auto;
-  text-align: center;
 }
 
 .weekly-forecast-temperatures {
@@ -151,7 +151,7 @@ footer {
   padding: 0 10px;
 }
 .min {
-  color: rgba(246, 82, 131, 0.613);
+  color: rgba(246, 82, 131, 0.519);
 }
 
 .footer-first {
