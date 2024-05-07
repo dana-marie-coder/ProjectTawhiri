@@ -22,6 +22,8 @@ function updateCityTemperature(response) {
   currentTemperature.innerHTML = Math.round(temperature);
   icon.innerHTML = `<img src="${response.data.condition.icon_url}"
                 class="weather-icon" />`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -59,7 +61,15 @@ function searchFormSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "5f66a5061f6to1243b6a5681aa6334d6";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = [`Tue`, `Wed`, `Thur`, `Fri`, `Sat`];
   let forecastHtml = "";
 
@@ -77,6 +87,7 @@ function displayForecast() {
   </div>
 `;
   });
+
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
@@ -84,5 +95,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchFormSubmit);
 
 searchCity("Redcliffe");
-
-displayForecast();
